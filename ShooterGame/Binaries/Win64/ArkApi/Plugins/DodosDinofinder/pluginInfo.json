@@ -1,0 +1,6 @@
+{
+    "FullName":"DodosDinofinder",
+    "Description":"Find lost dinos with a simple command",
+    "Version":1.0,
+    "MinApiVersion":3.54
+ }

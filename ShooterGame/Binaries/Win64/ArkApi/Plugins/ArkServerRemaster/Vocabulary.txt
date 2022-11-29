@@ -1,0 +1,129 @@
+// [Key Terms]
+KeyTerm_WordTimeSecond="Second"
+KeyTerm_WordTimeSecondPlural="Seconds"
+KeyTerm_WordTimeMinute="Minute"
+KeyTerm_WordTimeMinutePlural="Minutes"
+KeyTerm_WordTimeHour="Hour"
+KeyTerm_WordTimeHourPlural="Hours"
+KeyTerm_WordTimeDay="Day"
+KeyTerm_WordTimeDayPlural="Days"
+KeyTerm_PhraseTimeRemaining="Time Remaining"
+KeyTerm_PhraseCraftingProgress="Crafting Progress"
+KeyTerm_PhraseRepairingProgress="Repairing Progress"
+KeyTerm_PhraseCraftTime="Craft Time"
+KeyTerm_PhraseRepairTime="Repair Time"
+
+// [Bookshelf Note Info Texts]
+InfoNote_BPUpgrades_FolderName="Upgrade-Blueprint-Info"
+InfoNote_BPUpgrades="Blueprint Upgrading Information:\n\nCreate a folder named one of the following:\n\n   Upgrade\n   Upgrade Damage\n   Upgrade Armor\n   Upgrade Thermals\n   Upgrade Durability\n   Upgrade Revise\n\nThen place a blueprint in the 'Upgrade' folder, and simply craft the blueprint from there to attempt upgrading the specified stat.  If no stat is specified in the 'Upgrade' folder name, the upgrades will be evenly applied to all relevant item stats at a reduced rate.  If 'Revise' is specified, no upgrades will be attempted, and the blueprint's Efficiency Rating will be rerolled instead, altering the amount of resources needed to craft it for better or worse, influenced by your crafting skill.\n\nOnce you have upgraded a blueprint as much as your current crafting skill allows, continuing to craft the blueprint from within an 'Upgrade' folder will simply reroll its Efficiency Rating.  If you are satisfied with a blueprint's Efficiency Rating, simply remove it from the 'Upgrade' folder and any further crafts will function as normal, leaving its rating unchanged.\n"
+InfoNote_EngramStudying_FolderName="Study-Engram-Unlock-Info"
+InfoNote_EngramStudying="Engram Studying Information:\n\nCreate a folder named: 'Study'.\n\nDragging a Blueprint item onto the created 'Study' folder will attempt unlocking its Engram for you if you have enough points, bypassing any other prerequisites.\n"
+InfoNote_BPTranscribing_FolderName="Transcribe-Blueprint-Info"
+InfoNote_BPTranscribing="Blueprint Transcribing Information:\n\nCreate a folder named: 'Transcribe'.\n\nDragging a Blueprint onto the created 'Transcribe' folder will create a new basic default blueprint item of it.\n"
+InfoNote_ItemDisassembling_FolderName="Disassemble-Item-Info"
+InfoNote_ItemDisassembling="Item Disassembling Information:\n\nCreate a folder named: 'Disassemble'.\n\nDragging a craftable Item onto the created 'Disassemble' folder will create a new basic default blueprint of it, Destroying the item in the process.\n"
+InfoNote_MutagenRetraining_FolderName="Mutagen-Stat-Retrain-Info"
+InfoNote_MutagenRetraining="Mutagen Stat Retraining Information:\n\nCreate a folder named one of the following:\n\n   Retrain Health\n   Retrain Stamina\n   Retrain Oxygen\n   Retrain Food\n   Retrain Weight\n   Retrain Damage\n   Retrain Speed\n   Retrain Crafting\n\nThen drag a Mutagen item onto the folder to attempt retraining the specified base stat of the creature whose inventory the folder is in.\n\nRetraining a base stat will deduct a point from all other available base stats of the creature, and add the sum total of the deducted stat points into the stat specified in the 'Retrain' folder's name.  The higher the creature's base level, the higher its base stats can be trained to using this method.\n"
+InfoNote_MiscellaneousItemUsage_FolderName="Misc-Item-Usage-Info"
+InfoNote_MiscellaneousItemUsage="Miscellaneous Item Usage Information:\n\nCreate a folder named: 'Use'.\n\nThen drag one of the following items onto the 'Use' folder for a corresponding effect:\n\n   -Sweet Veggie Cake: (Creatures Only) Changes Creature's Rider-Bond Buff Player Preference To You\n   -Broth of Enlightenment: (Creatures Only) Grants Creature A Bonus Experience Buff\n   -Plant Z Fruit: (Light Pets Only) Recharges Creature's Charge Light & Causes Next Defecate To Be A Plant Z Seed\n   -Beer: (Chalicotherium Only) Grants Creature A Beer Buff\n"
+
+// [Custom Item Descriptions]
+ItemDescription_TaxidermyTool="Used to capture the Dermis of a dead creature, which is required to learn its Saddle Engrams, or can alternatively be displayed on a Taxidermy Base.\n"
+
+// [Chat Commands]
+ChatCommand_StatMindwipe="/StatMindwipe"
+ChatCommand_Repair="/Repair"
+
+// [Folder Commands]
+FolderCommand_Upgrade="Upgrade"
+FolderCommand_Study="Study"
+FolderCommand_Transcribe="Transcribe"
+FolderCommand_Disassemble="Disassemble"
+FolderCommand_Retrain="Retrain"
+FolderCommand_Use="Use"
+
+FolderCommandTerm_UpgradeItemStatDamage="Damage"
+FolderCommandTerm_UpgradeItemStatArmor="Armor"
+FolderCommandTerm_UpgradeItemStatThermals="Thermals"
+FolderCommandTerm_UpgradeItemStatDurability="Durability"
+FolderCommandTerm_UpgradeItemRevise="Revise"
+
+FolderCommandTerm_RetrainStatHealth="Health"
+FolderCommandTerm_RetrainStatStamina="Stamina"
+FolderCommandTerm_RetrainStatOxygen="Oxygen"
+FolderCommandTerm_RetrainStatFood="Food"
+FolderCommandTerm_RetrainStatWeight="Weight"
+FolderCommandTerm_RetrainStatMeleeDamage="Damage"
+FolderCommandTerm_RetrainStatSpeed="Speed"
+FolderCommandTerm_RetrainStatCraftingSpeed="Crafting"
+
+// [Pop-Up Notification Texts]
+
+Notification_DeathPenalty_PlayerLostEXP="You have lost some experience."
+Notification_DeathPenalty_PlayerLostLevel="You have lost a level!"
+Notification_DeathPenalty_PlayerStatLowered="Your {1} stat has been lowered."
+
+Notification_WakingTame_ErrorNotHighEnoughLevel1="This {1} seems to be avoiding you."
+Notification_WakingTame_ErrorNotHighEnoughLevel2="( You must be at least level {1} to attempt taming it )"
+
+Notification_Generic_ErrorInvalidTargetDino="You must be looking at a valid creature to do that."
+Notification_Generic_ErrorInvalidTargetStructure="You must be looking at a valid structure to do that."
+
+Notification_Fjordur_MultiTeleport_ErrorNotEnoughToActivate="You need {1} {2} to summon a portal to there."
+
+
+Notification_ConsoleCommand_CleanMap_Successful="Map cleanup has completed."
+
+Notification_ConsoleCommand_SpawnCustomDino_ErrorFailedToSpawn="Unable to spawn dino. Make sure you entered a correct blueprint path, and that you are in a suitable location."
+
+
+Notification_ChatCommand_Repair_ErrorUnrepairable="This structure is unable to be repaired."
+Notification_ChatCommand_Repair_ErrorAlreadyRepairing="This structure is already being repaired."
+Notification_ChatCommand_Repair_ErrorRepairCooldown="This structure was recently damaged and is not yet ready to be repaired."
+Notification_ChatCommand_Repair_ErrorNotDamaged="This structure does not need any repairs."
+Notification_ChatCommand_Repair_SendRequirements="The following items are required to repair this structure:"
+
+Notification_ChatCommand_StatMindwipe_ErrorMindwipeItemNotFound="You require a Mindwipe Tonic to do that."
+Notification_ChatCommand_StatMindwipe_ErrorOnCooldown="Your mind is not ready for that."
+Notification_ChatCommand_StatMindwipe_Successful="Your mind feels like a clean slate."
+
+
+Notification_FolderCommand_ErrorInvalidDinoOwnership="This creature does not belong to you."
+
+Notification_FolderCommand_UsedMutagen_ErrorMutationsDisabled="This server has not enabled mutagen mutations."
+Notification_FolderCommand_UsedMutagen_ErrorRetrainingDisabled="This server has not enabled mutagen stat re-training."
+Notification_FolderCommand_UsedMutagen_ErrorCryoCooldown="{1} currently has Cryo Sickness, it wouldn't be good to attempt that right now."
+Notification_FolderCommand_UsedMutagen_ErrorInvalidParameterText1="Invalid Folder Command."
+Notification_FolderCommand_UsedMutagen_ErrorInvalidParameterText2="Use the following folder command format:"
+Notification_FolderCommand_UsedMutagen_ErrorInvalidParameterText3="Example Folder Command Text:"
+Notification_FolderCommand_UsedMutagen_ErrorInvalidParameterText4="StatType"
+Notification_FolderCommand_UsedMutagen_ErrorNotEnoughMutagen="This creature requires at least {1} Mutagen to do that."
+Notification_FolderCommand_UsedMutagen_ErrorUnusedStatType="This creature can't level that stat."
+Notification_FolderCommand_UsedMutagen_ErrorLowFood="This creature needs to eat first."
+Notification_FolderCommand_UsedMutagen_ErrorUnableToImproveStatType="That stat cannot be enhanced any further."
+Notification_FolderCommand_UsedMutagen_ErrorUnableToMutate="This creature isn't capable of mutating."
+Notification_FolderCommand_UsedMutagen_ErrorUnableToRetrain="This creature isn't capable of stat re-training."
+Notification_FolderCommand_UsedMutagen_ErrorMutateMaxBaseLevel="This creature cannot be mutated any further."
+Notification_FolderCommand_UsedMutagen_ErrorNoRetrainStatPoints="This creature doesn't have any other available base stat points to reallocate to that stat."
+Notification_FolderCommand_UsedMutagen_SuccessfulMutation="{1} has successfully mutated."
+Notification_FolderCommand_UsedMutagen_SuccessfulRetrain="{1} has successfully been re-trained."
+
+Notification_FolderCommand_UsedVeggieCake_ErrorUnableToImprint="This creature cannot be imprinted upon."
+Notification_FolderCommand_UsedVeggieCake_Successful="{1} seemed to really enjoy that! ( Rider-Bond preference updated )"
+
+Notification_FolderCommand_UsedBrothEnlightenment_Successful="{1} seems full of energy and ready to train now!"
+
+Notification_FolderCommand_UsedPlantZFruit_Successful="{1} seems to feel refreshed!"
+
+Notification_FolderCommand_UsedBeer_ErrorInvalidCreature="This creature doesn't seem to want that."
+Notification_FolderCommand_UsedBeer_Successful="{1} seems to already be feeling the effects from that!"
+
+Notification_FolderCommand_Study_ErrorAlreadyLearnedEngram="This is a Blueprint of a {1}. You've already learned its corresponding engram."
+Notification_FolderCommand_Study_ErrorNotEnoughEngramPoints="You require more Engram Points to learn that."
+Notification_FolderCommand_Study_ErrorUnlockSaddleDermisItemNotFound="A Dermis sample from this creature is required to learn its saddle engram."
+
+Notification_FolderCommand_Transcribe_ErrorNoteItemNotFound="You need a Blank Note to transcribe onto."
+Notification_FolderCommand_Transcribe_ErrorOnCooldown="Your hand is cramped and needs some rest right now."
+
+Notification_FolderCommand_Disassemble_ErrorNoteItemNotFound="You need a Blank Note to sketch onto."
+Notification_FolderCommand_Disassemble_ErrorOnCooldown="Your mind needs some rest right now."

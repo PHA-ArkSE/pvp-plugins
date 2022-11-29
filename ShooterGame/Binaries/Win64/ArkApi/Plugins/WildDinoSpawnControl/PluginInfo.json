@@ -1,0 +1,9 @@
+{
+  "FullName":"WildDinoSpawnControl",
+  "Description":"(1.2) Control max wild spawn count",
+  "Version":1.2,
+  "MinApiVersion":3.51,
+  "ResourceId":1,
+  "Dependencies":[
+  ]
+}

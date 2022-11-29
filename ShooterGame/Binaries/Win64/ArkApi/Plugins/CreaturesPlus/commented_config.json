@@ -1,0 +1,155 @@
+{
+  "General": {
+    "ImprintNewRider": true, //Automatically change the imprinter of the dino to the person riding it
+    "FreeDinoRespecEnabled": true, //Enable free dino respec
+    "ShopDinoRespecEnabled": false, //Enable buying dino respec from ArkShop. The command  to put in the ArkShop config is "shopdinorespec"
+    "RefundShopDinoRespec": 0 //Enable refunding the points if the command is used but fails because not mounted on a dino etc.
+  },
+  "Commands": { //CHANGES TO THE COMMANDS SECTION REQUIRES THE PLUGIN TO BE UNLOADED (NOT RELOADED)
+    "LevelHP": "/levelhp", //Command level HP quickly
+    "LevelSpeed": "/levelspeed", //Command need to level Speed on flyers
+    "FreeRespec": "/dinorespec", //Command used by "FreeDinoRespecEnabled"
+    "ShopRespec": "shopdinorespec", //Command used by ArkShop to sell dino respecs
+    "ConfigReload": "CreaturesPlus.Reload" //Command for Console/RCON to reload the plugin config.
+  },
+  "Dinos": [
+    {
+      "Dino": "TekStrider_Character_BP",
+      "PersonalTamedDinoCost": 10 //Will change the personal taming cost to own this dino (dino tame limit value)
+    },
+    {
+      "Dino": "Argent_Character_BP", //Basic entry to be able to enable leveling flyer speed
+      "PreventRiding": true, //Will prevent players from mounting this dino. You can remove this line or set to false for normal behavior
+      "PreventBreeding": false //true will prevent the dino from being allowed to breed //false will be the dino's default setting
+    },
+    {
+      "Dino": "Ptero_Character_BP",
+      "PreventRiding": true, //Will prevent players from mounting this dino. You can remove this line or set to false for normal behavior
+      "PreventBreeding": false, //true will prevent the dino from being allowed to breed //false will be the dino's default setting
+      "PersonalTamedDinoCost": 2, //Will change the personal taming cost to own this dino (dino tame limit value)
+      "Stats": {
+        "Stamina": { //stat type to change (optional if  you don't want to modify a stat don't list in here)
+          "AddOnTame": 0.35, //When tame completes adds this percentage (optional can be removed or set to -1 to disable changing default value)
+          "ImprintGives": 0.2, //Full imprint 20% bonus (optional can be removed or set to -1 to disable changing default value)
+          "MaxPerPoint": 0.1, //Percent to add per stat point (optional can be removed or set to -1 to disable changing default value)
+          "CapPoints": -1 //Max player added levels (optional can be removed or set to -1 to disable changing default value) (Removing or -1 keeps default behavior No Level Limit)
+        },
+        "Weight": {
+          "AddOnTame": 0.35,
+          "ImprintGives": 0.2,
+          "MaxPerPoint": 0.1,
+          "CapPoints": 0 //Max player added levels (Blocks adding any levels to stat)
+        },
+        "Movement Speed": {
+          "AddOnTame": 0.35,
+          "ImprintGives": 0.2,
+          "MaxPerPoint": 0.02,
+          "WildMaxPerPoint": 0.01, //Will provide 1% speed for each wild tame allocated point
+          "CapPoints": 5 //Max player added levels (Limits to 5 levels) (For Flyers not setting this to a value 0 or higher will allow leveling all points into speed when "EnableFlyerSpeed":true)
+        }
+      }
+    },
+    {
+      "Dino": "IceJumper_Character_BP",
+      "Stats": {
+        "Health": {
+          "AddOnTame": 0.35,
+          "ImprintGives": 0.2,
+          "MaxPerPoint": 0.1,
+          "CapPoints": -1
+        },
+        "Stamina": {
+          "AddOnTame": 0.35,
+          "ImprintGives": 0.2,
+          "MaxPerPoint": 0.1,
+          "CapPoints": 10
+        },
+        "Oxygen": {
+          "AddOnTame": 0.35,
+          "ImprintGives": 0.2,
+          "MaxPerPoint": 0.1,
+          "CapPoints": -1
+        },
+        "Food": {
+          "AddOnTame": 0.35,
+          "ImprintGives": 0.2,
+          "MaxPerPoint": 0.1,
+          "CapPoints": -1
+        },
+        "Weight": {
+          "AddOnTame": 0.35,
+          "ImprintGives": 0.2,
+          "MaxPerPoint": 0.1,
+          "CapPoints": -1
+        },
+        "Melee Damage": {
+          "AddOnTame": 0.35,
+          "ImprintGives": 0.2,
+          "MaxPerPoint": 0.1,
+          "CapPoints": -1
+        },
+        "Movement Speed": {
+          "AddOnTame": 0.35,
+          "ImprintGives": 0.2,
+          "MaxPerPoint": 0.02,
+          "CapPoints": 10
+        }
+      }
+    }
+  ],
+  "Messages": {
+    "Sender": {
+      "Message": "Testing"
+    },
+    "MaxStatPoints": {
+      "Message": "This stat cannot be leveled further.",
+      "Scale": 2.0,
+      "DisplayTime": 3.0,
+      "Color": "Yellow"
+    },
+    "DinoRespec": {
+      "Message": "Your dinos stats have been reset.",
+      "Scale": 1.5,
+      "DisplayTime": 3.0,
+      "Color": "Cyan"
+    },
+    "RefundDinoRespec": {
+      "Message": "You must be mounted! Your {} shop points have been refunded!",
+      "Scale": 1.5,
+      "DisplayTime": 3.0,
+      "Color": "Red"
+    },
+    "NotMounted": {
+      "Message": "You must be mounted to use this command!",
+      "Scale": 1.5,
+      "DisplayTime": 3.0,
+      "Color": "Red"
+    },
+    "LeveledStat": {
+      "Message": "{0} was leveled up {1} times!",
+      "Scale": 1.5,
+      "DisplayTime": 3.0,
+      "Color": "Green"
+    },
+    "PreventRiding": {
+      "Message": "Riding this dino is not allowed.",
+      "Scale": 1.5,
+      "DisplayTime": 1.5,
+      "Color": "Red"
+    },
+    "PreventBreeding": {
+      "Message": "Breeding this dino is not allowed.",
+      "Scale": 1.5,
+      "DisplayTime": 2.5,
+      "Color": "Red"
+    }
+  },
+  "Mysql": {
+    "UseMysql": false,
+    "MysqlHost": "localhost",
+    "MysqlPort": 3306,
+    "MysqlUser": "sqlusername",
+    "MysqlPass": "sqlpassword",
+    "MysqlDB": "mydatabasename"
+  }
+}

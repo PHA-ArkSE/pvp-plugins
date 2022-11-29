@@ -1,0 +1,9 @@
+{
+  "FullName":"EngramResourcePuller",
+  "Description":"Pull resources for engrams and blueprints",
+  "Version": 1.03,
+  "MinApiVersion": 3.52,
+  "Dependencies":[
+    "Permissions"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "Max_Dino_Counts": { // List of dino classes to limit
+    "Blueprint'/Game/PrimalEarth/Dinos/Tusoteuthis/Mega_Tusoteuthis_Character_BP.Mega_Tusoteuthis_Character_BP'": 5, // Example. Only allow 5 Alpha Tusoteuthis to spawn on the whole map.
+    "Blueprint'/Game/PrimalEarth/Dinos/Coelacanth/Coel_Character_BP.Coel_Character_BP'": 600 // Example. Only allow 600 Coels to spawn on the whole map.
+  },
+  "WriteDumpsToFile": false, // If true, the command `wdsc.dumpdinos` will write to a file under /WildDinoSpawnControl/DinoDumpLogs with the current date, and the count of each dino on the map
+  "DestroyDinosOverLevel": true, // If true, dinos over the level specified below will be destroyed (only natural spawns)
+  "MaxDinoLevel": 300 // Max natural spawn level
+}

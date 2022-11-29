@@ -1,0 +1,27 @@
+{
+  "AdminIgnoreProtections": true, // If true admins will bypass all protections
+  "PreventionOptions": {
+    "PlayerDamage": {
+      "PreventAnyDamageToOfflinePlayers": true, // If true offline players won't be damaged by anything
+      "GraceSecondsOfInvincibilityAfterLogin": 30 // Seconds after a player logins in which he will be invincible. -1 disables this feature.
+    },
+    "InventoryAccess": { // For accessing death item caches, dino inventories, etc.
+      "PreventAccessForEnemies": true, // If true anyone from outside player/dino tribe won't be able to open the inventory
+      "AllowAccessToUnlockedContainers": true, // If true, unlocked containers will be able to be accessed (Read the setting below to understand)
+      "UnlockedContainersToAllow": [ // If this list is empty and access to unlocked containers is true, all unlocked containers will be accessible, if the list has any structure paths, only those structure paths will be allowed
+        // Note: Only works with structures that can be placed by players, not death caches for example.
+      ],
+      "AllowInteractionsBetweenAllies": false // If true allies will bypass the restrictions too
+    },
+    "PlayerCarrying": {
+      "PreventCarryingByEnemies": false, // If true player's won't be able to be dragged/carried. Useful for preventing drowning.
+      "AllowInteractionsBetweenAllies": true // If true allies will bypass the restrictions too. In this case this will also allow allies to ride as passengers in allied dinos
+    },
+    "ItemPickup": {
+      "PreventItemPickup": false, // If true only the tribe who dropped the item will be able to pick it up
+      "AllowInteractionsBetweenAllies": true // If true allies will bypass the restrictions too
+    },
+    "PatchWanderingDinoMating": true, // If true dinos from different tribes won't be allowed to mate while on wandering. This is considered an exploit and should be left as true.
+    "PatchCloningEnemyDinos": true // If true, cloning chamber won't allow cloning dinos of another tribe, unless it's from the player's tribe. 
+  }
+}
